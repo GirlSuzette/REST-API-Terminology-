@@ -120,17 +120,17 @@ To solve this problem, you can apply the REST style to the endpoints, and thanks
 Mencionar el recurso en una cnonvención
 : paragram
 
-|Old Style                 |       REST Style          |
-|--------------------------|---------------------------|
-|`/getAllBooks`            | GET/Books                 |
-|`/submitNewBook`          | POST/Books                |
-|`/updateAuthor`           | PUT/Authors:id            |
-|`/getBooksAuthors`        | GET/Books/:id/Authors     |
-|`/getNumberOfBooksOnStock`| GET/Books                 |
-|`/addNewImageToBook`      | POST/Books/:id/Image      |
-|`/getBooksImages`         | GET/Books/:id/Image       |
-|`/addCoverImage`          | POST/Books/:id/Cover_Image|
-|`/listBookCovers`         | GET/Books/:id             |
+|Old Style                 |       REST Style           |
+|--------------------------|----------------------------|
+|`/getAllBooks`            | GET /Books                 |
+|`/submitNewBook`          | POST /Books                |
+|`/updateAuthor`           | PUT /Authors:id            |
+|`/getBooksAuthors`        | GET /Books/:id/Authors     |
+|`/getNumberOfBooksOnStock`| GET /Books                 |
+|`/addNewImageToBook`      | POST /Books/:id/Cover      |
+|`/getBooksImages`         | GET /Books/:id/Cover       |
+|`/addCoverImage`          | POST /Books/:id/Cover      |
+|`/listBookCovers`         | GET /Books/:id             |
 
 Old Style	REST Style
 
@@ -147,7 +147,7 @@ Es una solicitud para obtener informacion de una API
 aceder una URL  
 
 ```sh
-$ curl  https://api.github.com --head
+$ curl  GET -X https://api.github.com 
 ```
 
 According to the responded request, answer what does it mean the next parts from the handler:
@@ -165,5 +165,5 @@ curl -i GET https://api.github.com
 ###### If response is not showing those parts, ask to google how to print them in console.
 
 ```sh
-# 
+# curl  GET https://www.google.com.mx/ --head
 ```
