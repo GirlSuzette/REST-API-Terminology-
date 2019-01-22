@@ -66,9 +66,9 @@ Are standard response codes given by web site servers on the internet.
 
 Write what are their meaning.
 
-|Group|Description                                                  |
+|Group|Description                                                                     |
 |-----|--------------------------------------------------------------------------------|
-|1XX| |(Informational): The request was received, continuing process / se recibió la   solicitud
+|1XX| |(Informational): The request was received, continuing process                   |
 |2XX| |(Successful): The request was successfully received, understood, and accepted   |
 |3XX| |(Redirection): Further action needs to be taken in order to complete the request|
 |4XX| |(Client Error): The request contains bad syntax or cannot be fulfilled          |
@@ -80,18 +80,18 @@ Write what are their meaning.
 
 There are the most common status codes in HTTP responses. Please, fill with the required description.
 
-|Status Code|Meaning|
-|-----------|-------|
-|200| |Ok 
-|201| |Created 
-|204| |No Content  			
-|301| |Moved Permanently E
-|400| |Bad Request 
-|401| |Unauthorized 
-|403| |Forbidden 
-|404| |Not Found
-|405| |Method Not Allowed 
-|500| | Internal Server Error 
+|Status Code| Meaning              |
+|-----------|----------------------|
+|200        | Ok                   | 
+|201        | Created              |
+|204        | No Content           |  			
+|301        | Moved Permanently    |
+|400        | Bad Request          |
+|401        | Unauthorized         |
+|403        | Forbidden            |
+|404        | Not Found            |
+|405        | Method Not Allowed   |
+|500        | Internal Server Error| 
 
 
 
@@ -144,10 +144,10 @@ JSON (Javascript Object Notation)
 Make a `curl` request to _GitHub API_
 Es una solicitud para obtener informacion de una API 
 
-aceder una URL  $ curl  https://api.github.com --head
+aceder una URL  
 
 ```sh
-$ 
+$ curl  https://api.github.com --head
 ```
 
 According to the responded request, answer what does it mean the next parts from the handler:
