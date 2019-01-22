@@ -68,11 +68,11 @@ Write what are their meaning.
 
 |Group|Description                                                                     |
 |-----|--------------------------------------------------------------------------------|
-|1XX| |(Informational): The request was received, continuing process                   |
-|2XX| |(Successful): The request was successfully received, understood, and accepted   |
-|3XX| |(Redirection): Further action needs to be taken in order to complete the request|
-|4XX| |(Client Error): The request contains bad syntax or cannot be fulfilled          |
-|5XX| |(Server Error): The server failed to fulfill an apparently valid request        |
+|1XX  |(Informational): The request was received, continuing process                   |
+|2XX  |(Successful): The request was successfully received, understood, and accepted   |
+|3XX  |(Redirection): Further action needs to be taken in order to complete the request|
+|4XX  |(Client Error): The request contains bad syntax or cannot be fulfilled          |
+|5XX  |(Server Error): The server failed to fulfill an apparently valid request        |
 
 8. HTTP Status Codes and Their Related Interpretation
 
@@ -121,7 +121,7 @@ Mencionar el recurso en una cnonvención
 : paragram
 
 |Old Style                 |       REST Style          |
-|---------|----------------|---------------------------|
+|--------------------------|---------------------------|
 |`/getAllBooks`            | GET/Books                 |
 |`/submitNewBook`          | POST/Books                |
 |`/updateAuthor`           | PUT/Authors:id            |
